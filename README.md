@@ -18,6 +18,8 @@ The Programmable Calculator prompts the user a menu with the following commands:
 
 #### Notes
 
+The __Command Pattern__ has been implemented both for the management of the Command Line Interface and for the Programmable Calculator Instructions implementation.
+
 The __execute family__ of commands (Run, Debug and Continue) require that the user previously loaded a file of commands.
 
 The __insert__ functionality require a valid path to a file of commands placed in the main directory. 
