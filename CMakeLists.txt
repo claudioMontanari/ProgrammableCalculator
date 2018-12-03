@@ -18,4 +18,4 @@ add_executable(ProgrammableCalculatorProject
         Programmable_calculator/Register_Set.h
         Test/Test_Suite.cpp
         Test/Test_Suite.h
-        main.cpp Programmable_calculator/Programmable_Calculator.h Programmable_calculator/Programmable_Calculator.cpp CLI/Abstract_CLI_Command.h CLI/Input_File_CLI_Command.h CLI/Print_CLI_Command.h CLI/Debug_CLI_Command.h CLI/Run_CLI_Command.h CLI/Continue_CLI_Command.h CLI/Continue_CLI_Command.cpp CLI/Debug_CLI_Command.cpp CLI/Input_File_CLI_Command.cpp CLI/Print_CLI_Command.cpp CLI/Run_CLI_Command.cpp)
+        main.cpp Programmable_calculator/Programmable_Calculator.h Programmable_calculator/Programmable_Calculator.cpp CLI/Abstract_CLI_Command.h CLI/Input_File_CLI_Command.h CLI/Print_CLI_Command.h CLI/Debug_CLI_Command.h CLI/Run_CLI_Command.h CLI/Continue_CLI_Command.h CLI/Continue_CLI_Command.cpp CLI/Debug_CLI_Command.cpp CLI/Input_File_CLI_Command.cpp CLI/Print_CLI_Command.cpp CLI/Run_CLI_Command.cpp CLI/Input_Terminal_CLI_Command.cpp CLI/Input_Terminal_CLI_Command.h)

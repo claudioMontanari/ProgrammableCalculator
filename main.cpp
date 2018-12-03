@@ -9,6 +9,7 @@
 #include "CLI/Continue_CLI_Command.h"
 #include "CLI/Input_File_CLI_Command.h"
 #include "CLI/Print_CLI_Command.h"
+#include "CLI/Input_Terminal_CLI_Command.h"
 
 #include <functional>
 #include <map>
@@ -22,12 +23,14 @@ int main() {
     Programmable_Calculator programmable_calculator(variables);
 
     auto input_file_cmd = [] () { return new Input_File_CLI_Command(); };
+    auto input_terminal_cmd = [] () { return new Input_Terminal_CLI_Command(); };
     auto debug_cmd = [] () { return new Debug_CLI_Command(); };
     auto run_cmd = [] () { return new Run_CLI_Command(); };
     auto continue_cmd = [] () { return new Continue_CLI_Command(); };
     auto print_cdm = [] () { return new Print_CLI_Command(); };
 
     commands_builder.insert(std::pair<char, std::function<Abstract_CLI_Command*()>>('i', input_file_cmd));
+    commands_builder.insert(std::pair<char, std::function<Abstract_CLI_Command*()>>('t', input_terminal_cmd));
     commands_builder.insert(std::pair<char, std::function<Abstract_CLI_Command*()>>('d', debug_cmd));
     commands_builder.insert(std::pair<char, std::function<Abstract_CLI_Command*()>>('r', run_cmd));
     commands_builder.insert(std::pair<char, std::function<Abstract_CLI_Command*()>>('c', continue_cmd));
@@ -40,6 +43,7 @@ int main() {
         std::cout << "|    Welcome to the Programmable Calculator Command Line Interface!    |" << std::endl;
         std::cout << "|                                                                      |" << std::endl;
         std::cout << "|     - i : to specify an input file of commands                       |" << std::endl;
+        std::cout << "|     - t : to insert instructions from terminal                       |" << std::endl;
         std::cout << "|     - d : to run the instructions in debug mode                      |" << std::endl;
         std::cout << "|     - r : to run up to 100 instructions                              |" << std::endl;
         std::cout << "|     - c : to run other 100 instructions                              |" << std::endl;
