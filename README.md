@@ -10,6 +10,7 @@ To install the project import it in a C++ editor (CLion for instance) and set th
 The Programmable Calculator prompts the user a menu with the following commands:
 
 - i : Ask the user to insert a path to a file of commands 
+- t : Let the user insert the instructions from the command line interface 
 - d : Execute the program in debug mode - one instruction  at a time
 - r : Run the program up to 100 instructions
 - c : Continue to run the program for other 100 instructions
